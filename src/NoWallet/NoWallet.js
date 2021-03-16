@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import CreateWalletForm from "../Components/CreateWalletForm";
-import "./npwallet.css";
+import CreateWalletForm from "../Components/CreateWalletForm/CreateWalletForm";
+import "./nowallet.css";
 
 export default function NoWallet() {
   const [modal, setModal] = useState(false);

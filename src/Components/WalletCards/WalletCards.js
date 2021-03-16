@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import { ListWalletContext } from "../ContextsApi/ListWalletContext";
+import { ListWalletContext } from "../../ContextsApi/ListWalletContext";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrashAlt, faPen } from "@fortawesome/free-solid-svg-icons";
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import { Popup, Label } from "semantic-ui-react";
-import "./component.css";
+import "./WalletCards.css";
 
 function WalletCards() {
   const { WalletList, removeWallet } = useContext(ListWalletContext);
@@ -28,9 +28,7 @@ function WalletCards() {
   return (
     <div>
       {WalletList.map((item, index) => {
-        {
-          step > 1 ? (step = 0) : step++;
-        }
+        step > 1 ? (step = 0) : step++;
         return (
           <Link
             to={`/main/${item.walletName}`}

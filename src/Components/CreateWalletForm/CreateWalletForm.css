@@ -1,0 +1,40 @@
+.modal-bg-style {
+  color: #13224f;
+  height: 600px;
+}
+.table-form-styling {
+  width: 300px;
+  font-size: 17px;
+  height: 300px;
+  margin: 0 auto;
+}
+.label-crte-wlt {
+  padding-right: 30px;
+  font-size: large;
+}
+.crte-wlt-inp-form {
+  width: 400px;
+  height: 20px;
+  border: none;
+  border-bottom: 3px solid #13224f;
+  outline: none;
+  padding-left: 4px;
+  color: #13224f;
+  font-size: 17px;
+}
+.crte-wlt-inp-form:focus {
+  border-bottom: 3px solid #ff25c2;
+  transition: 0.3s;
+}
+.create-wlt-btn-modal {
+  border: none;
+  border: 1px solid #ff25c2;
+  color: #ff25c2;
+  background-color: transparent;
+  width: 140px;
+  height: 50px;
+  font-size: 17px;
+}
+.create-wlt-btn-modal:hover {
+  color: #c21491;
+}

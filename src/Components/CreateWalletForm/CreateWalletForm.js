@@ -1,12 +1,11 @@
 import React, { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 
-import { ListWalletContext } from "../ContextsApi/ListWalletContext";
-import { IdGeneratorContext } from "../ContextsApi/IdGeneratorContext";
+import { ListWalletContext } from "../../ContextsApi/ListWalletContext";
 
 import { Select } from "semantic-ui-react";
 import { Modal } from "react-bootstrap";
-import "./component.css";
+import "./CreateWalletForm.css";
 
 export default function CreatWalletForm({ show, onHide }) {
   let history = useHistory();

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 
-function DeleteModal(props) {
+function SubmitDelete(props) {
   const [smShow, setSmShow] = useState(false);
 
   return (
@@ -27,4 +27,4 @@ function DeleteModal(props) {
   );
 }
 
-export default DeleteModal;
+export default SubmitDelete;

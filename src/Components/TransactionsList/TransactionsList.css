@@ -1,0 +1,37 @@
+.trans-list-div-parent {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  width: 700px;
+}
+.trans-item {
+  height: 70px;
+  width: 500px;
+  background-color: #13224f;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 10px;
+  margin: 9px 0px;
+  justify-content: space-around;
+}
+.trans-amount {
+  margin-left: 10px;
+  color: #b6fadf;
+}
+.note-card {
+  width: 30%;
+  height: min-content;
+  background-color: #0b1e53df;
+  font-size: 18px;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.note-trans-item-flex {
+  display: flex;
+  width: 700px;
+}

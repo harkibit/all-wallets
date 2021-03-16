@@ -1,21 +1,20 @@
 import React, { useContext, useState } from "react";
-import { ListTransContext } from "../ContextsApi/ListTransContext";
+import { ListTransContext } from "../../ContextsApi/ListTransContext";
 
 import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt, faThumbtack } from "@fortawesome/free-solid-svg-icons";
 import { Label, Popup } from "semantic-ui-react";
-import "./component.css";
+import "./TransactionsList.css";
 
-export default function TransList() {
+export default function TransactionsList() {
   const { TransList } = useContext(ListTransContext);
   const { removeTrans } = useContext(ListTransContext);
-
   const { name } = useParams();
-  const [animationChange, setAnimationChange] = useState(
+  
+  const [animationChange] = useState(
     "note-trans-item-flex animate__animated animate__slideInDown animate__faster"
   );
-
   const handleRemoveTrans = (id) => {
     removeTrans(id);
   };
@@ -50,7 +49,7 @@ export default function TransList() {
                         )
                     )}
                   </div>
-                  <div className="trash-icon-pos">
+                  <div>
                     <Popup
                       trigger={
                         <FontAwesomeIcon

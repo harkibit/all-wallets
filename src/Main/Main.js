@@ -1,9 +1,9 @@
 import React, { useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 
-import TransForm from "../Components/TransForm";
-import TransList from "../Components/TransList";
-import WalletCards from "../Components/WalletCards";
+import TransactionsForm from "../Components/TransactionsForm/TransactionsForm";
+import TransactionsList from "../Components/TransactionsList/TransactionsList";
+import WalletCards from "../Components/WalletCards/WalletCards";
 import { ListWalletContext } from "../ContextsApi/ListWalletContext";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -31,20 +31,18 @@ export default function Main() {
                   icon={faArrowCircleRight}
                   className={glow ? "showarrow" : "hidearrow"}
                 >
-                  hello
                 </FontAwesomeIcon>
                 <WalletCards />
               </div>
             </Grid.Column>
             <Grid.Column width={13} className="right-side-column">
               {WalletList.filter((wallet) => wallet.walletName === name).map(
-                (wallet, index) => {
-                  <h1 style={{ color: "white" }}>{wallet.walletName}</h1>;
-                }
+                (wallet) =>
+                  <h1 style={{ color: "white" }}>{wallet.walletName}</h1>
               )}
               <div className="main-items-right-div">
-                <TransForm />
-                <TransList />
+                <TransactionsForm />
+                <TransactionsList />
                 <br />
               </div>
             </Grid.Column>

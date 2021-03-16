@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import CreatWalletForm from "./CreateWalletForm";
+import CreatWalletForm from "../CreateWalletForm/CreateWalletForm";
 import Navbar from "react-bootstrap/Navbar";
-import "./component.css";
+import "./Navbar.css";
 
 export default function NavBar() {
   const [modal, setModal] = useState(false);

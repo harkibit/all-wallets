@@ -10,6 +10,15 @@
   width: 400px;
   z-index: 10;
 }
+.arrow-card-inline {
+  display: flex;
+}
+.showarrow {
+  display: block;
+}
+.hidearrow {
+  display: none;
+}
 .right-side-column {
   padding: 60px;
   background-color: #091945;
@@ -19,13 +28,6 @@
 .main-items-right-div {
   margin-left: 300px;
 }
-.showarrow {
-  display: block;
-}
-.hidearrow {
-  display: none;
-}
-.arrow-card-inline {
-  display: flex;
-}
+
+
 
