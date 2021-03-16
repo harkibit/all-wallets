@@ -2,13 +2,11 @@ import React, { useState, useContext } from "react";
 import { ListTransContext } from "../ContextsApi/ListTransContext";
 import { Button } from "semantic-ui-react";
 import { useParams } from "react-router-dom";
+import "./TransactionsForm.css" 
 
-function TransForm() {
+function transactionsForm() {
   const { name } = useParams();
-  console.log(name);
-
   const { addTrans } = useContext(ListTransContext);
-
   const [amount, setAmount] = useState(0);
   const [noteTrans, setNoteTrans] = useState("");
   const [tagTrans, setTagTrans] = useState("");
@@ -102,4 +100,4 @@ function TransForm() {
     </>
   );
 }
-export default TransForm;
+export default transactionsForm;

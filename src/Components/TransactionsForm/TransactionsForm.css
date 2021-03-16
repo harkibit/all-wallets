@@ -1,0 +1,75 @@
+.trans-form {
+  height: max-content;
+  background-color: #0b1e533b;
+  width: 700px;
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.89);
+}
+
+.grid-trans-form {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.inline-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.trans-form-inputs {
+  height: 48px;
+  background: transparent;
+  border: none;
+  border: 1px solid gray;
+  font-size: 18px;
+  padding: 0px 0px 0px 10px;
+  color: rgba(255, 255, 255, 0.883);
+}
+.trans-form-inputs:focus {
+  outline: none;
+  border: 1px solid #13224f;
+  transition: 0.5s;
+}
+
+.trans-form-input-amount {
+  width: 300px;
+}
+
+.exp-in {
+  color: rgba(255, 255, 255, 0.89);
+}
+.exp-in:hover {
+  cursor: pointer;
+  transition: 0.2s;
+}
+.exp-in:focus {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.89);
+}
+.expense:hover {
+  border: 1px solid #8916fe;
+  color: #8916fe;
+}
+.expense:focus {
+  border: 1px solid #8916fe;
+  background-color: #8916fe;
+}
+.income:hover {
+  border: 1px solid #b6fadf;
+  color: #b6fadf;
+}
+.income:focus {
+  border: 1px solid #0dbb9e;
+  background-color: #0dbb9e;
+}
+
+.btn-create-trans {
+  width: max-content;
+  padding: 15px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.89);
+  color: rgba(255, 255, 255, 0.89);
+  font-size: 15px;
+  margin-top: 20px;
+}

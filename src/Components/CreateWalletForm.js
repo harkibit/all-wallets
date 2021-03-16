@@ -1,8 +1,8 @@
 import React, { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 
-import { ListWalletContext } from "../Contexts/ListWalletContext";
-import { IdGeneratorContext } from "../Contexts/IdGeneratorContext";
+import { ListWalletContext } from "../ContextsApi/ListWalletContext";
+import { IdGeneratorContext } from "../ContextsApi/IdGeneratorContext";
 
 import { Select } from "semantic-ui-react";
 import { Modal } from "react-bootstrap";

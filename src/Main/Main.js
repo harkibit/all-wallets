@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import TransForm from "../Components/TransForm";
 import TransList from "../Components/TransList";
 import WalletCards from "../Components/WalletCards";
-import { ListWalletContext } from "../Contexts/ListWalletContext";
+import { ListWalletContext } from "../ContextsApi/ListWalletContext";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";

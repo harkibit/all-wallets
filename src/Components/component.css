@@ -1,31 +1,3 @@
-.navBar {
-  background: #13224f;
-  color: rgba(255, 255, 255, 0.89);
-  padding: 0px 10px;
-  height: 65px;
-  z-index: 10;
-
-}
-.btn-color {
-  background: transparent;
-  color: rgba(255, 255, 255, 0.89);
-  width: 150px;
-  height: 40px;
-  border: none;
-  border: 1px solid rgba(255, 255, 255, 0.89);
-  font-size: 17px;
-  top: 20px;
-  z-index: 10;
-}
-.addwallet-fixed{
-  top: 10px;
-  position: fixed;
-}
-.btn-color:hover {
-  color: rgba(255, 255, 255, 0.87);
-  transition: 0.3s;
-}
-/* navbar end */
 
 /* Modal - styling start */
 .modal-bg-style {

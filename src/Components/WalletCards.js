@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import { ListWalletContext } from "../Contexts/ListWalletContext";
+import { ListWalletContext } from "../ContextsApi/ListWalletContext";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt, faPen } from "@fortawesome/free-solid-svg-icons";

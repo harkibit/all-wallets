@@ -1,16 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import ListTransContextProvider from "./Contexts/ListTransContext";
-import ListWalletContextProvider from "./Contexts/ListWalletContext";
-import IdGeneratorContextProvider from "./Contexts/IdGeneratorContext";
+import ListTransContextProvider from "./ContextsApi/ListTransContext";
+import ListWalletContextProvider from "./ContextsApi/ListWalletContext";
+import IdGeneratorContextProvider from "./ContextsApi/IdGeneratorContext";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import 'semantic-ui-css/semantic.min.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'animate.css/animate.css'
 
-import NoWallet from "./NoMain/NoWallet";
-import NavBar from "./Components/Navbar";
+import NoWallet from "./NoWallet/NoWallet";
+import NavBar from "./Components/Navbar/Navbar";
 import Main from "./Main/Main";
 
 export default function App() {
