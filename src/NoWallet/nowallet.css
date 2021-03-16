@@ -1,12 +1,11 @@
 .nomain {
   height: 100vh;
-  background-image: url("bgnm.png");
   background: cover;
-  color: whitesmoke;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #eef5f9;
 }
 .nomain-parent-div {
   margin: 0 auto;
@@ -20,8 +19,6 @@
   width: 300px;
   height: 60px;
   font-size: 20px;
-  background-color: #ff25c2;
-  color: whitesmoke;
   border: none;
   border-radius: 30px;
 }

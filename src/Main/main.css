@@ -1,11 +1,12 @@
 .main {
   height: 200%;
+  background-color: #eef5f9;
 }
 .white {
   color: rgba(255, 255, 255, 0.89);
 }
 .sidebar {
-  background: #13224f;
+  background: #2f333e;
   height: 200%;
   width: 400px;
   z-index: 10;
@@ -21,7 +22,6 @@
 }
 .right-side-column {
   padding: 60px;
-  background-color: #091945;
   width: 75%;
   height: 200%;
 }

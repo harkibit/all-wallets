@@ -18,8 +18,7 @@ function WalletCards() {
     borderRadius: 10 + "px",
     opacity: 0.7,
   };
-  const colors = ["#0fbc9e", "#8916fe", "#ff25c2"];
-  const labelColor = ["teal", "purple", "pink"];
+  const colors = ["#ffc36d","#ff7676", "#54e69d"];
   const changeClassName = (e) => {
     e.currentTarget.classList.add("onclickcard");
   };
@@ -41,7 +40,7 @@ function WalletCards() {
               onFocus={changeClassName}
             >
               <div className="label-trans-numb">
-                <Label circular basic size="big" color={labelColor[step]}>
+                <Label circular basic size="big">
                   {item.balance} {item.select}
                 </Label>
               </div>

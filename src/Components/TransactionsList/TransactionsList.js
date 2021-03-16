@@ -11,7 +11,7 @@ export default function TransactionsList() {
   const { TransList } = useContext(ListTransContext);
   const { removeTrans } = useContext(ListTransContext);
   const { name } = useParams();
-  
+
   const [animationChange] = useState(
     "note-trans-item-flex animate__animated animate__slideInDown animate__faster"
   );
@@ -34,19 +34,19 @@ export default function TransactionsList() {
             <div className={animationChange}>
               <div className="trans-list-div-parent" id={i}>
                 <div className="trans-item">
-                  <div>
+                  <div className = "trans-item-info-container">
+                    <div className = "trans-amount-note-flex">
                     <h3 className="trans-amount">
                       {transaction.type === "expense"
                         ? "- " + parseInt(transaction.amount)
                         : parseInt(transaction.amount)}
                     </h3>
+                    <span>{transaction.note}</span>
+                    </div>
+                    
                     {allTags.map(
                       (tag) =>
-                        allTags.length !== 0 && (
-                          <Label circular color="pink">
-                            {tag}
-                          </Label>
-                        )
+                        allTags.length !== 0 && <Label circular>{tag}</Label>
                     )}
                   </div>
                   <div>
@@ -66,12 +66,6 @@ export default function TransactionsList() {
                     />
                   </div>
                 </div>
-              </div>
-
-              <div className="note-card shadow-lg p-3 mb-5 rounded ">
-                <FontAwesomeIcon icon={faThumbtack} />
-                &nbsp;
-                {transaction.note}
               </div>
             </div>
           );

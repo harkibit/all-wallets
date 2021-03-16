@@ -7,8 +7,6 @@
 .trans-item {
   height: 70px;
   width: 500px;
-  background-color: #13224f;
-  color: white;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -16,22 +14,15 @@
   margin: 9px 0px;
   justify-content: space-around;
 }
+.trans-item-info-container{
+  width: 100%;
+}
+.trans-amount-note-flex{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .trans-amount {
   margin-left: 10px;
-  color: #b6fadf;
-}
-.note-card {
-  width: 30%;
-  height: min-content;
-  background-color: #0b1e53df;
-  font-size: 18px;
-  color: whitesmoke;
-  justify-content: center;
-  align-items: center;
-  margin-top: 25px;
-}
-
-.note-trans-item-flex {
-  display: flex;
-  width: 700px;
+  color: #ff7676;
 }

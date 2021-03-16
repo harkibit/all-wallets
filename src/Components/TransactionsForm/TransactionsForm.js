@@ -2,7 +2,8 @@ import React, { useState, useContext } from "react";
 import { ListTransContext } from "../../ContextsApi/ListTransContext";
 import { Button } from "semantic-ui-react";
 import { useParams } from "react-router-dom";
-import "./TransactionsForm.css" 
+import "./TransactionsForm.css";
+import ButtonComponent from "../Button/Button";
 
 function TransactionsForm() {
   const { name } = useParams();
@@ -35,7 +36,7 @@ function TransactionsForm() {
 
   return (
     <>
-      <div className="trans-form shadow-lg p-3 mb-5 rounded">
+      <div className="trans-form">
         <h3>Make Transaction : &nbsp;</h3>
         <br />
 
@@ -50,23 +51,7 @@ function TransactionsForm() {
               required
             />
 
-            <Button.Group>
-              <button
-                className="btn-color exp-in income"
-                value="income"
-                onClick={handleType}
-              >
-                Income
-              </button>
-              <Button.Or />
-              <button
-                className="btn-color exp-in expense"
-                value="expense"
-                onClick={handleType}
-              >
-                Expense
-              </button>
-            </Button.Group>
+            
           </div>
 
           <div className="inline-input">
@@ -78,22 +63,43 @@ function TransactionsForm() {
               onChange={handleNoteTrans}
               required
             />
-
-            <input
+          </div>
+          <div className="inline-input">
+          <input
               type="text"
               className="trans-form-inputs trans-form-input-amount"
               placeholder="Add Tags ( coma in between )"
               value={tagTrans}
               onChange={handleTagTrans}
             />
-          </div>
+            </div>
+          <div className="inline-input">
 
-          <div>
-            <form onSubmit={addTransaction}>
-              <button className="btn-create-trans" type="submit">
-                Create Transaction
+          <Button.Group>
+              <button
+                className="exp-in income"
+                value="income"
+                onClick={handleType}
+              >
+                Income
               </button>
-            </form>
+              <Button.Or />
+              <button
+                className="exp-in expense"
+                value="expense"
+                onClick={handleType}
+              >
+                Expense
+              </button>
+            </Button.Group>
+            </div>
+
+            <div className="inline-input">
+          
+
+          <form onSubmit={addTransaction}>
+            <ButtonComponent />
+          </form>
           </div>
         </div>
       </div>
