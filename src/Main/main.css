@@ -1,7 +1,7 @@
 .main {
   background-color: #eef5f9;
 }
-.white {
+.fontcolor {
   color: #2f333e;
 }
 .sidebar {
@@ -11,12 +11,11 @@
 }
 .right-side-column {
   padding: 60px;
-  width: 75%;
+  width: 80vw;
   height: 200%;
 }
 .main-items-right-div {
   margin-left: 300px;
 }
-
 
 

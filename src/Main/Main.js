@@ -1,6 +1,4 @@
-import React, { useContext } from "react";
-import { useParams } from "react-router-dom";
-
+import React from "react";
 import TransactionsForm from "../Components/TransactionsForm/TransactionsForm";
 import TransactionsList from "../Components/TransactionsList/TransactionsList";
 import WalletCards from "../Components/WalletCards/WalletCards";
@@ -12,12 +10,9 @@ export default function Main() {
     <>
       <div className="main">
         <Grid>
-          <Grid.Column width={3} className="sidebar">
-            <div className="arrow-card-inline">
-              <WalletCards />
-            </div>
-          </Grid.Column>
+          <Grid.Column width={3} className="sidebar"></Grid.Column>
           <Grid.Column width={13} className="right-side-column">
+            <WalletCards />
             <div className="main-items-right-div">
               <TransactionsForm />
               <TransactionsList />
