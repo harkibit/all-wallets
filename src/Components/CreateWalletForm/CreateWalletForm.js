@@ -40,7 +40,6 @@ export default function CreatWalletForm({ show, onHide }) {
   return (
     <div>
       <Modal
-        size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
         show={show}

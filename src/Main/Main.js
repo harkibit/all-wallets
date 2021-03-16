@@ -13,7 +13,7 @@ export default function Main() {
           <Grid.Column width={3} className="sidebar"></Grid.Column>
           <Grid.Column width={13} className="right-side-column">
             <WalletCards />
-            <div className="main-items-right-div">
+            <div className="main-items-right-div-2-sections">
               <TransactionsForm />
               <TransactionsList />
             </div>

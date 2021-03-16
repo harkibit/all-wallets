@@ -1,8 +1,11 @@
+.wallet-flex{
+  display: flex;
+}
 .walletcard {
-  margin: 50px 100px;
-  height: 130px;
-  width: 250px;
-  border-radius: 30px;
+  margin: 20px ;
+  height: 10vw;
+  width: 18vw;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   padding: 10px;
@@ -13,9 +16,6 @@
 }
 .walletcard:hover {
   box-shadow: 2px;
-}
-.walletcard:focus {
-  filter: blur(10px);
 }
 .label-trans-numb {
   align-self: flex-end;
