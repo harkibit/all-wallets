@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
-  width: 700px;
+  width: 90%;
+  background-color: white;
+  height: max-content;
 }
 .trans-item {
   height: 70px;

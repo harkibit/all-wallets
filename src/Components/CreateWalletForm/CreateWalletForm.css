@@ -10,22 +10,20 @@
 }
 .crte-wlt-inp-form {
   width: 400px;
-  height: 20px;
-  border: none;
-  border-bottom: 3px solid #2f333e;
+  height: 50px;
+  border: 1px solid rgb(216, 216, 216);
   outline: none;
   padding-left: 4px;
   color: #2f333e;
   font-size: 17px;
 }
 .crte-wlt-inp-form:focus {
-  border-bottom: 3px solid #2f333e;
   transition: 0.3s;
 }
 .create-wlt-btn-modal {
   border: none;
-  border: 1px solid #2f333e;
-  color: #2f333e;
+  border: 1px solid rgb(216, 216, 216);
+  color: rgb(148, 148, 148);
   background-color: transparent;
   width: 140px;
   height: 50px;
@@ -33,4 +31,7 @@
 }
 .create-wlt-btn-modal:hover {
   color: #2f333e;
+  border: 1px solid #2f333e;
+  transition: 0.3s ease-in;
+
 }

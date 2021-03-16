@@ -1,24 +1,13 @@
 .main {
-  height: 200%;
   background-color: #eef5f9;
 }
 .white {
-  color: rgba(255, 255, 255, 0.89);
+  color: #2f333e;
 }
 .sidebar {
-  background: #2f333e;
-  height: 200%;
-  width: 400px;
+  background: white;
+  width: 20vw;
   z-index: 10;
-}
-.arrow-card-inline {
-  display: flex;
-}
-.showarrow {
-  display: block;
-}
-.hidearrow {
-  display: none;
 }
 .right-side-column {
   padding: 60px;
