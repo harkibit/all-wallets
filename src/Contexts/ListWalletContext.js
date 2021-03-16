@@ -8,9 +8,9 @@ const ListWalletContextProvider = (props) => {
     id = WalletList.length;
     setWalletList([
       ...WalletList,
-      { id, transactions, walletName, balance, select }
+      { id, transactions, walletName, balance, select },
     ]);
-  }; //put walletlist.lenght in id
+  };
 
   const removeWallet = (index) => {
     setWalletList(WalletList.filter((wallet) => wallet.id !== index));

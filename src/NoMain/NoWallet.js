@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import CreateWalletForm from "../Components/CreateWalletForm";
-import "./nomain.css";
+import "./npwallet.css";
 
-export default function NoMain() {
+export default function NoWallet() {
   const [modal, setModal] = useState(false);
 
   const mainCreateWallet = (e) => {

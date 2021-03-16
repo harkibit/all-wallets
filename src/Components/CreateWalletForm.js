@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 import { ListWalletContext } from "../Contexts/ListWalletContext";
 import { IdGeneratorContext } from "../Contexts/IdGeneratorContext";
@@ -10,12 +10,11 @@ import "./component.css";
 
 export default function CreatWalletForm({ show, onHide }) {
   let history = useHistory();
-  const { addWallet, WalletList } = useContext(ListWalletContext);
-  const { IdGenerator, setIdGenerator } = useContext(IdGeneratorContext);
+  const { addWallet } = useContext(ListWalletContext);
 
   const options = [
     { key: "$", value: "$", text: "Dollar $" },
-    { key: "lbp", value: "LBP", text: "Lebanese Pound LBP" }
+    { key: "lbp", value: "LBP", text: "Lebanese Pound LBP" },
   ];
   const [walletName, setWalletName] = useState("");
   const [balance, setBalance] = useState(0);
@@ -34,9 +33,9 @@ export default function CreatWalletForm({ show, onHide }) {
   const onSubmit = (e) => {
     e.preventDefault();
     addWallet(3, [], walletName, balance, select);
-    setWalletName("")
-    setBalance(0)
-    setSelect("")
+    setWalletName("");
+    setBalance(0);
+    setSelect("");
     history.push("/main/" + walletName);
   };
   return (
@@ -110,16 +109,12 @@ export default function CreatWalletForm({ show, onHide }) {
             </table>
           </Modal.Body>
           <Modal.Footer>
-            {/* <Link to={`/main/${IdGenerator}`}> */}
             <button className="create-wlt-btn-modal" type="submit" closeButton>
               Create Wallet
             </button>
-            {/* </Link> */}
           </Modal.Footer>
         </form>
       </Modal>
     </div>
   );
 }
-
-// ={`${url}/${product.id}`}

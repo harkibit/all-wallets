@@ -2,10 +2,6 @@
   background: #13224f;
   color: rgba(255, 255, 255, 0.89);
   padding: 0px 10px;
-  /* position: fixed; */
-  /* position: -webkit-sticky;
-  position: sticky; */
-  /* top: 20px; */
   height: 65px;
   z-index: 10;
 
@@ -27,14 +23,12 @@
 }
 .btn-color:hover {
   color: rgba(255, 255, 255, 0.87);
-  /* border: 1px solid rgba(255, 255, 255, 0.739); */
   transition: 0.3s;
 }
 /* navbar end */
 
 /* Modal - styling start */
 .modal-bg-style {
-  /* background-color: #f1f3f4;  */
   color: #13224f;
   height: 600px;
 }
@@ -95,7 +89,6 @@
   color: white;
   flex-direction: column;
   justify-content: space-evenly;
-  /* z-index: 10; */
 }
 .walletcard:hover {
   box-shadow: 2px;
@@ -106,15 +99,13 @@
 .wallet-name {
   text-decoration: none;
   margin-top: 2px;
-  /* justify-self: center; */
   font-size: 30px;
   text-shadow: 2px 2px 8px #ffffffa8;
 }
 .wallet-name:hover{
   text-decoration: none;
-  /* text-shadow: 2px 2px 8px #ffffffa8; */
 }
-/* transaction item */
+
 .trans-list-div-parent {
   display: flex;
   flex-direction: column-reverse;
@@ -124,8 +115,6 @@
 .note-trans-item-flex {
   display: flex;
   width: 700px;
-
-  /* align-items: center; */
 }
 .trans-item {
   height: 70px;
@@ -142,7 +131,6 @@
 .trans-icon {
   width: 35px;
   justify-self: flex-end;
-  /* height: 40px; */
 }
 .trans-amount {
   margin-left: 10px;
@@ -162,10 +150,7 @@
   align-items: center;
   margin-top: 25px;
 }
-/* .trash-icon-pos{
-  /* align-self: flex-end; */
-/* margin-left: 300px;
-} */
+
 .icons-card {
   display: flex;
   justify-content: space-around;
@@ -173,12 +158,10 @@
 
 .label-circular-wlt-card{
   width: max-content;
-  /* height: min-content; */
   border-top: none;
   border-right: none;
   border-left: 3px solid whitesmoke;
   border-bottom: 3px solid whitesmoke;
-  /* border-radius: 50%; */
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
