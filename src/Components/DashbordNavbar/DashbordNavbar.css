@@ -1,7 +1,7 @@
 .dash-board-nav{
-    width: 80vw;
+    width: 100%;
     background-color: white;
     color : #2f333e;
-    height: 12vh;
+    height: 10vh;
     display: flex;
 }
