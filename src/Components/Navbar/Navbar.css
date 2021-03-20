@@ -1,8 +1,7 @@
 .navBar {
-  padding: 0px 10px;
   height: 65px;
   z-index: 10;
-  background-color: #2f333e;
+  background-color: #2e3d51;
   color : white;
 }
 .btn-color {
@@ -14,10 +13,6 @@
   background-color: transparent;
   border: none;
   color : white;
-}
-.addwallet-fixed {
-  top: 10px;
-  position: fixed;
 }
 .btn-color:hover {
   transition: 0.3s;

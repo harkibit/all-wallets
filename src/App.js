@@ -1,17 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import ListTransContextProvider from "./ContextsApi/ListTransContext";
-import ListWalletContextProvider from "./ContextsApi/ListWalletContext";
-import IdGeneratorContextProvider from "./ContextsApi/IdGeneratorContext";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import 'semantic-ui-css/semantic.min.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'animate.css/animate.css'
 
-import NoWallet from "./NoWallet/NoWallet";
+import ListTransContextProvider from "./ContextsApi/ListTransContext";
+import ListWalletContextProvider from "./ContextsApi/ListWalletContext";
+import IdGeneratorContextProvider from "./ContextsApi/IdGeneratorContext";
 import NavBar from "./Components/Navbar/Navbar";
-import Main from "./Main/Main";
+import LandingPage from "./Screen/LandingPage/LandingPage";
+import Home from "./Screen/Home/Home";
+import Footer from "./Components/Footer/Footer";
 
 export default function App() {
   return (
@@ -20,9 +20,9 @@ export default function App() {
         <ListWalletContextProvider>
           <ListTransContextProvider>
             <IdGeneratorContextProvider>
-              <NavBar />
-              <Route exact path="/" component={NoWallet} />
-              <Route path = "/main/:name"> <Main/> </Route>
+              <Route exact path="/" component={LandingPage} />
+              <Route path = "/Home/:name"> <Home/> </Route>
+              <Footer/>
             </IdGeneratorContextProvider>
           </ListTransContextProvider>
         </ListWalletContextProvider>

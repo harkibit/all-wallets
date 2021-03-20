@@ -30,7 +30,7 @@ function WalletCards() {
         step > 1 ? (step = 0) : step++;
         return (
           <Link
-            to={`/main/${item.walletName}`}
+            to={`/Home/${item.walletName}`}
             style={{ textDecoration: "none" }}
           >
             <div

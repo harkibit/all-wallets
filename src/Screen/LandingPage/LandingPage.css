@@ -1,0 +1,18 @@
+.add-wallet-btn-nomain {
+  width: 300px;
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+}
+.header-img{
+}
+
+.landing-page-header{
+  height: 100vh;
+  background-image: url("../../assets/Untitled\ design\ \(5\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}

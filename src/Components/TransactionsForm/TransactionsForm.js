@@ -43,14 +43,13 @@ function TransactionsForm() {
         <div className="grid-trans-form">
           <div className="inline-input">
             <input
-              type="text"
+              type="number"
               className="trans-form-inputs trans-form-input-amount"
-              placeholder="Add Amount"
+              placeholder="Add amount"
               value={amount}
               onChange={handleAmountInput}
               required
             />
-
             
           </div>
 
@@ -58,7 +57,7 @@ function TransactionsForm() {
             <input
               type="text"
               className="trans-form-inputs trans-form-input-amount"
-              placeholder="Some Notes ?.."
+              placeholder="Some notes ?.."
               value={noteTrans}
               onChange={handleNoteTrans}
               required
@@ -68,7 +67,7 @@ function TransactionsForm() {
           <input
               type="text"
               className="trans-form-inputs trans-form-input-amount"
-              placeholder="Add Tags ( coma in between )"
+              placeholder="Add tags ( coma in between )"
               value={tagTrans}
               onChange={handleTagTrans}
             />
@@ -98,7 +97,7 @@ function TransactionsForm() {
           
 
           <form onSubmit={addTransaction}>
-            <ButtonComponent />
+            <ButtonComponent text = "create transaction"/>
           </form>
           </div>
         </div>

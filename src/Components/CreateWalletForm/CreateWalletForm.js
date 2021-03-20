@@ -35,7 +35,7 @@ export default function CreatWalletForm({ show, onHide }) {
     setWalletName("");
     setBalance(0);
     setSelect("");
-    history.push("/main/" + walletName);
+    history.push("/Home/" + walletName);
   };
   return (
     <div>

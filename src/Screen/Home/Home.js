@@ -1,12 +1,12 @@
 import React from "react";
-import TransactionsForm from "../Components/TransactionsForm/TransactionsForm";
-import TransactionsList from "../Components/TransactionsList/TransactionsList";
-import WalletCards from "../Components/WalletCards/WalletCards";
-import DashbordNavbar from "../Components/DashbordNavbar/DashbordNavbar";
+import TransactionsForm from "../../Components/TransactionsForm/TransactionsForm";
+import TransactionsList from "../../Components/TransactionsList/TransactionsList";
+import WalletCards from "../../Components/WalletCards/WalletCards";
+import DashbordNavbar from "../../Components/DashbordNavbar/DashbordNavbar";
 import { Grid } from "semantic-ui-react";
-import "./main.css";
+import "./Home.css";
 
-export default function Main() {
+export default function Home() {
   return (
     <>
       <div className="main">

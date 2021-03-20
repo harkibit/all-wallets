@@ -16,7 +16,6 @@
 .main-items-right-div-2-sections {
   padding: 20px;
   width: 80vw;
-  height: 200%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
