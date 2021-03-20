@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import CreateWalletForm from "../../Components/CreateWalletForm/CreateWalletForm";
-import header from "../../assets/Untitled design (5).png";
 import "./LandingPage.css";
 
 export default function LandingPage() {
