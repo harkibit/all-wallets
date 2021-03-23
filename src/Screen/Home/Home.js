@@ -10,17 +10,18 @@ export default function Home() {
   return (
     <>
       <div className="main">
-
+        <DashbordNavbar />
         <Grid>
-          <Grid.Column width={3} className="sidebar"></Grid.Column>
-          <Grid.Column width={13} className="right-side-column">
-            <DashbordNavbar/>
+          <Grid.Column width={4}>
             <WalletCards />
+          </Grid.Column>
+          <Grid.Column width={8} className="right-side-column">
             <div className="main-items-right-div-2-sections">
               <TransactionsForm />
               <TransactionsList />
             </div>
           </Grid.Column>
+          <Grid.Column width={4}></Grid.Column>
         </Grid>
       </div>
     </>

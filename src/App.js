@@ -20,6 +20,7 @@ export default function App() {
         <ListWalletContextProvider>
           <ListTransContextProvider>
             <IdGeneratorContextProvider>
+              <NavBar/>
               <Route exact path="/" component={LandingPage} />
               <Route path = "/Home/:name"> <Home/> </Route>
               <Footer/>

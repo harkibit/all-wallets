@@ -1,6 +1,4 @@
-.wallet-flex{
-  display: flex;
-}
+
 .walletcard {
   margin: 20px ;
   height: 10vw;
@@ -28,7 +26,4 @@
 .wallet-name:hover {
   text-decoration: none;
 }
-.icons-card {
-  display: flex;
-  justify-content: space-around;
-}
+

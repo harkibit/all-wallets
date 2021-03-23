@@ -5,14 +5,19 @@
   border: none;
   border-radius: 30px;
 }
-.header-img{
-}
 
 .landing-page-header{
   height: 100vh;
   background-image: url("../../assets/header.png");
+  color : white;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
+  padding : 0 4%;
+}
+
+.landing-page-header-text-h2{
+  font-size: 4vw;
+  padding-bottom: 15px;
 }

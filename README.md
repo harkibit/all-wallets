@@ -14,7 +14,7 @@ npm i
 
 ## MIT License
 
-COPYRIGHT © 2021 MOVIE JASH
+COPYRIGHT © 2021 Wallet app
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

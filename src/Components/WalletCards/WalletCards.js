@@ -25,7 +25,7 @@ function WalletCards() {
   let step = 0;
 
   return (
-    <div className = "wallet-flex">
+    <div>
       {WalletList.map((item, index) => {
         step > 1 ? (step = 0) : step++;
         return (

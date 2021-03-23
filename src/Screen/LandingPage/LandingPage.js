@@ -12,7 +12,7 @@ export default function LandingPage() {
     <div className="landing-page">
       <div className="landing-page-header">
         <div className="landing-page-header-text">
-          <h2>Some Text in here</h2>
+          <h2 className="landing-page-header-text-h2">Manage your budget</h2>
           <form onSubmit={mainCreateWallet}>
             <button
               type="submit"
