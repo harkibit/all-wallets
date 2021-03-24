@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import CreateWalletForm from "../../Components/CreateWalletForm/CreateWalletForm";
+import OurValues from "../../Components/OurValues/OurValues";
 import "./LandingPage.css";
 
 export default function LandingPage() {
@@ -23,8 +24,10 @@ export default function LandingPage() {
             </button>
           </form>
         </div>
-
         <CreateWalletForm show={modal} onHide={() => setModal(false)} />
+      </div>
+      <div className="landing-page-body">
+        <OurValues />
       </div>
     </div>
   );

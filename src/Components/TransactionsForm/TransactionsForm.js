@@ -37,10 +37,8 @@ function TransactionsForm() {
   return (
     <>
       <div className="trans-form">
-        <h3>Make Transaction : &nbsp;</h3>
-        <br />
-
-        <div className="grid-trans-form">
+        <h3>Make Transaction :</h3>
+        <form onSubmit={addTransaction} className="grid-trans-form">
           <div className="inline-input">
             <input
               type="number"
@@ -50,7 +48,20 @@ function TransactionsForm() {
               onChange={handleAmountInput}
               required
             />
-            
+            <input
+              type="button"
+              className="exp-in income"
+              value="income"
+              onClick={handleType}
+              required
+            />
+            <input
+              type="button"
+              className="exp-in expense"
+              value="expense"
+              onClick={handleType}
+              required
+            />
           </div>
 
           <div className="inline-input">
@@ -62,45 +73,20 @@ function TransactionsForm() {
               onChange={handleNoteTrans}
               required
             />
-          </div>
-          <div className="inline-input">
-          <input
+            <input
               type="text"
               className="trans-form-inputs trans-form-input-amount"
               placeholder="Add tags ( coma in between )"
               value={tagTrans}
               onChange={handleTagTrans}
             />
-            </div>
-          <div className="inline-input">
-
-          <Button.Group>
-              <button
-                className="exp-in income"
-                value="income"
-                onClick={handleType}
-              >
-                Income
-              </button>
-              <Button.Or />
-              <button
-                className="exp-in expense"
-                value="expense"
-                onClick={handleType}
-              >
-                Expense
-              </button>
-            </Button.Group>
-            </div>
-
-            <div className="inline-input">
-          
-
-          <form onSubmit={addTransaction}>
-            <ButtonComponent text = "create transaction"/>
-          </form>
           </div>
-        </div>
+
+          <ButtonComponent
+            text="create transaction"
+            className="create-trans-btn"
+          />
+        </form>
       </div>
     </>
   );

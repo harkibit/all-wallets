@@ -3,7 +3,7 @@ import { ListTransContext } from "../../ContextsApi/ListTransContext";
 
 import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrashAlt, faThumbtack } from "@fortawesome/free-solid-svg-icons";
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import { Label, Popup } from "semantic-ui-react";
 import "./TransactionsList.css";
 
@@ -44,7 +44,7 @@ export default function TransactionsList() {
                     <span>{transaction.note}</span>
                     </div>
                     
-                    {allTags.map(
+                    {allTags.length !== 0 && allTags.map(
                       (tag) =>
                         allTags.length !== 0 && <Label circular>{tag}</Label>
                     )}

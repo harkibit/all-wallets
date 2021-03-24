@@ -1,13 +1,21 @@
 .trans-form {
   height: max-content;
-  width: 500px;
+  width: 100%;
+  height: 45vh;
   padding: 20px;
   background-color: white;
   border-radius: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
 }
 .grid-trans-form {
   display: grid;
   grid-gap: 10px;
+  align-content: space-between;
+  height: 80%
 }
 .inline-input {
   display: flex;
@@ -64,4 +72,6 @@
   background-color: #ff7676;
 }
 
-
+.create-trans-btn{
+  justify-self: end;
+}
