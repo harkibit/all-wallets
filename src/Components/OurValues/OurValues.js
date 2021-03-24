@@ -4,13 +4,12 @@ import { Icon } from "semantic-ui-react";
 
 export default function OurValues() {
   const icon_size = {
-    fontSize: "10vw",
+    fontSize: "8vw",
     marginBottom: "8vh",
     color: "#f2b552",
   };
   return (
     <div className="ourValues-container">
-      <h1>Our Values</h1>
 
       <div className="ourValues-icon">
         <div>

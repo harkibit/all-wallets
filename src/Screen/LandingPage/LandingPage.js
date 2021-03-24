@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import CreateWalletForm from "../../Components/CreateWalletForm/CreateWalletForm";
 import OurValues from "../../Components/OurValues/OurValues";
+import HowItWorks from "../../Components/HowItWorks/HowItWorks";
+
 import "./LandingPage.css";
 
 export default function LandingPage() {
@@ -28,6 +30,7 @@ export default function LandingPage() {
       </div>
       <div className="landing-page-body">
         <OurValues />
+        <HowItWorks/>
       </div>
     </div>
   );

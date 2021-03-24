@@ -1,0 +1,30 @@
+.howitworks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin : 0 auto;
+    width : 90vw;
+    height : 80vh;
+}
+.howitworks-title-text{
+    height : 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.howitworks-title{
+    font-size: 5vw;
+}
+.howitworks-text{
+    width : 80%
+}
+.howitworks-img{
+    width : 60vw;
+    height : 100%;
+}
+
+@media (max-width : 600px){
+    .howitworks{
+        flex-direction: column-reverse;
+    }
+}
