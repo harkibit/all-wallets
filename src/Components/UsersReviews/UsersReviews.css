@@ -1,0 +1,21 @@
+.l-c-container{
+    height : 90vh;
+    width: 100vw; 
+}
+.l-c-container > div{
+    background-image: url("../../assets/landingPage.png");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height : 100%;
+    display: flex;
+    justify-content: center;
+}
+.l-c-container > div > div {
+    width : 45%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+    justify-items: center;
+    gap : 2vh;
+
+}

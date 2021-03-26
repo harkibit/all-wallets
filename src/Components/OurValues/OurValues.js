@@ -4,7 +4,7 @@ import { Icon } from "semantic-ui-react";
 
 export default function OurValues() {
   const icon_size = {
-    fontSize: "8vw",
+    fontSize: "7vw",
     marginBottom: "8vh",
     color: "#f2b552",
   };
