@@ -1,6 +1,6 @@
 .btn-create-trans {
     width: max-content;
-    padding: 15px;
+    padding: 5px 20px;
     background: transparent;
-    border: 1px solid #2f333e;
+    border: 1px solid;
   }

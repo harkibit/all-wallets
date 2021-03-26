@@ -13,6 +13,14 @@ import LandingPage from "./Screen/LandingPage/LandingPage";
 import Home from "./Screen/Home/Home";
 import Footer from "./Components/Footer/Footer";
 
+module.exports = () => {
+  const dotenv = require('dotenv')
+  const myEnv = dotenv.config().parsed
+  const envKeys = Object.keys(myEnv).reduce((prev, next) => {
+    prev[`process.env.${next}`] = JSON.stringify(env[next]);
+    return prev;
+  }, {});
+}
 export default function App() {
   return (
     <Router>
