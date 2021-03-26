@@ -2,5 +2,20 @@
     background-image: url("../../assets/Footer.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer > :nth-child(1){
+    color : white;
+    margin : 8vh 0 2vh 0
+}
+.footer > :nth-child(2) {
+    width : 25vw;
+}
+.social-media{
+    margin-top: 3vh;
 }
