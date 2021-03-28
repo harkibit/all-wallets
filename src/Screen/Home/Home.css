@@ -1,5 +1,6 @@
 .main {
   background-color: #eef5f9;
+  min-height: 110vh;
 }
 .fontcolor {
   color: #2f333e;
