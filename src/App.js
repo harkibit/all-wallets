@@ -12,7 +12,7 @@ import NavBar from "./Components/Navbar/Navbar";
 import LandingPage from "./Screen/LandingPage/LandingPage";
 import Home from "./Screen/Home/Home";
 import Footer from "./Components/Footer/Footer";
-
+import "./App.css"
 
 export default function App() {
   return (
