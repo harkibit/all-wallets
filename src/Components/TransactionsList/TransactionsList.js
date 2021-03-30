@@ -2,26 +2,15 @@ import React, { useContext, useState } from "react";
 import { ListTransContext } from "../../ContextsApi/ListTransContext";
 
 import { useParams } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
-import { Label, Popup } from "semantic-ui-react";
 import "./TransactionsList.css";
+import TransactionItem from "../TransactionItem/TransactionItem";
 
 export default function TransactionsList() {
   const { TransList } = useContext(ListTransContext);
-  const { removeTrans } = useContext(ListTransContext);
   const { name } = useParams();
-
   const [animationChange] = useState(
     "note-trans-item-flex animate__animated animate__slideInDown animate__faster"
   );
-  const handleRemoveTrans = (id) => {
-    removeTrans(id);
-  };
-  const style_popup = {
-    borderRadius: 10 + "px",
-    opacity: 0.7,
-  };
   let allTags = [];
 
   return (
@@ -33,39 +22,13 @@ export default function TransactionsList() {
           return (
             <div className={animationChange}>
               <div className="trans-list-div-parent" id={i}>
-                <div className="trans-item">
-                  <div className = "trans-item-info-container">
-                    <div className = "trans-amount-note-flex">
-                    <h3 className="trans-amount">
-                      {transaction.type === "expense"
-                        ? "- " + parseInt(transaction.amount)
-                        : parseInt(transaction.amount)}
-                    </h3>
-                    <span>{transaction.note}</span>
-                    </div>
-                    
-                    {allTags.length !== 0 && allTags.map(
-                      (tag) =>
-                        allTags.length !== 0 && <Label circular>{tag}</Label>
-                    )}
-                  </div>
-                  <div>
-                    <Popup
-                      trigger={
-                        <FontAwesomeIcon
-                          icon={faTrashAlt}
-                          size="2x"
-                          onClick={() => handleRemoveTrans(transaction.id)}
-                        />
-                      }
-                      content="delete"
-                      inverted
-                      style={style_popup}
-                      position="bottom center"
-                      size="tiny"
-                    />
-                  </div>
-                </div>
+                <TransactionItem
+                  id={transaction.id}
+                  amount={transaction.amount}
+                  note={transaction.note}
+                  type={transaction.type}
+                  allTags={allTags}
+                />
               </div>
             </div>
           );

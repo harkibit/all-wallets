@@ -1,0 +1,18 @@
+.trans-item {
+  height: max-content;
+  width: 100%;
+  border-radius: 20px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trans-amount {
+  font-size: x-large;
+}
+.trash{
+    font-size: x-large;
+}
+.trash:hover{
+    cursor: pointer;
+}
