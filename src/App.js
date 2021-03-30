@@ -10,6 +10,7 @@ import ListWalletContextProvider from "./ContextsApi/ListWalletContext";
 import IdGeneratorContextProvider from "./ContextsApi/IdGeneratorContext";
 import LandingPage from "./Screen/LandingPage/LandingPage";
 import Home from "./Screen/Home/Home";
+import Registration from "./Screen/Registration/Registration";
 import Footer from "./Components/Footer/Footer";
 import "./App.css"
 
@@ -22,6 +23,7 @@ export default function App() {
             <IdGeneratorContextProvider>
               <Route exact path="/" component={LandingPage} />
               <Route path = "/Home/:name"> <Home/> </Route>
+              <Route path = "/register"> <Registration/> </Route>
               <Footer/>
             </IdGeneratorContextProvider>
           </ListTransContextProvider>

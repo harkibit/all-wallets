@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 import CreateWalletForm from "../../Components/CreateWalletForm/CreateWalletForm";
 import "./Header.css";
 
@@ -22,6 +22,10 @@ export default function Header() {
           >
             Create Wallet
           </button>
+
+          <Link to="/register">
+            <button className="add-wallet-btn-nomain"> Sign up </button>
+          </Link>
         </form>
       </div>
       <CreateWalletForm show={modal} onHide={() => setModal(false)} />

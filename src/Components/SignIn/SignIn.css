@@ -1,0 +1,7 @@
+.signin{
+    width : 70%;
+}
+.fg-su{
+    display: flex;
+    flex-direction: column;
+}
