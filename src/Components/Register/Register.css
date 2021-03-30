@@ -1,0 +1,23 @@
+.register{
+    width : 70vw;
+    height : 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-radius: 20px;
+}
+.reg-left-grid{
+    background-color: #2e3d51;
+    color : white;
+    display: flex;
+    align-items: center;
+    padding: 3vw;
+    border-radius: 20px 0 0 20px;
+}
+.reg-right-grid{
+    display: flex;
+    place-items: center;
+    width : 100%;
+    background-color: white;
+    padding: 3vw;
+    border-radius: 0 20px 20px 0;
+}
