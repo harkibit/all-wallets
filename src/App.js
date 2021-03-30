@@ -13,6 +13,7 @@ import Home from "./Screen/Home/Home";
 import Registration from "./Screen/Registration/Registration";
 import Footer from "./Components/Footer/Footer";
 import "./App.css"
+import Signup from "./Components/Signup/Signup";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
               <Route exact path="/" component={LandingPage} />
               <Route path = "/Home/:name"> <Home/> </Route>
               <Route path = "/register"> <Registration/> </Route>
+              <Route path = "/signup"> <Signup/> </Route>
               <Footer/>
             </IdGeneratorContextProvider>
           </ListTransContextProvider>

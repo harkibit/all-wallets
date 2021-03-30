@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form } from "semantic-ui-react";
-import "./SignIn.css"
+import "./SignIn.css";
+import { Link } from "react-router-dom";
 
 export default function SignIn() {
   const [name, setName] = useState("");
@@ -16,7 +17,7 @@ export default function SignIn() {
     setEmail(e.target.value);
   };
   return (
-    <div className = "signin">
+    <div className="signin">
       <Form onSubmit={handleSubmit}>
         <Form.Input
           placeholder="Name"
@@ -34,9 +35,11 @@ export default function SignIn() {
         />
         <Form.Button content="Login" />
 
-        <div className = "fg-su">
-            <span>Forget Password?</span>
-            <span>Do not have an account? Sign up</span>
+        <div className="fg-su">
+          <span>Forget Password?</span>
+          <span>
+            Do not have an account? <Link to="/signup">Sign up</Link>
+          </span>
         </div>
       </Form>
     </div>
