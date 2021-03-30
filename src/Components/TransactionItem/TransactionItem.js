@@ -1,33 +1,70 @@
-import React from "react";
-import "./TransactionItem.css"
+import React, { useContext, useState } from "react";
+import { ListTransContext } from "../../ContextsApi/ListTransContext";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import { Label, Popup } from "semantic-ui-react";
+import "./TransactionItem.css";
+import { Accordion, Icon } from "semantic-ui-react";
 
 export default function TransactionItem(props) {
-  const { type, amount, note, tags } = props;
+  const { id, amount, note, type, allTags } = props;
+  const { removeTrans } = useContext(ListTransContext);
+
+  const handleRemoveTrans = (id) => {
+    removeTrans(id);
+  };
+  const style_popup = {
+    borderRadius: 8 + "px",
+    opacity: 0.7,
+  };
+
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleClick = (e, titleProps) => {
+    const { index } = titleProps;
+    const newIndex = activeIndex === index ? -1 : index;
+
+    setActiveIndex(newIndex);
+  };
+
   return (
     <div className="trans-item">
-      <div className="trans-item-info-container">
-        <div className="trans-amount-note-flex">
-          <h3 className="trans-amount">
+      <Accordion>
+        <Accordion.Title
+          active={activeIndex === 0}
+          index={0}
+          onClick={handleClick}
+        >
+          <Icon name="dropdown" />
+          <span className="trans-amount">
             {type === "expense" ? "- " + parseInt(amount) : parseInt(amount)}
-          </h3>
+          </span>
+        </Accordion.Title>
+        <Accordion.Content active={activeIndex === -1}>
           <span>{note}</span>
-        </div>
+          <br />
 
-        {tags.map((tag) => tags.length !== 0 && <Label circular>{tag}</Label>)}
-      </div>
+          {allTags.length !== 0 &&
+            allTags.map(
+              (tag) => allTags.length !== 0 && <Label circular>{tag}</Label>
+            )}
+        </Accordion.Content>
+      </Accordion>
+
       <div>
         <Popup
           trigger={
             <FontAwesomeIcon
               icon={faTrashAlt}
-              size="2x"
-              onClick={() => handleRemoveTrans(transaction.id)}
+              className = "trash"
+              onClick={() => handleRemoveTrans(id)}
             />
           }
           content="delete"
           inverted
           style={style_popup}
-          position="bottom center"
+          position="top center"
           size="tiny"
         />
       </div>

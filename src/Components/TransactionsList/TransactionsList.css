@@ -9,22 +9,3 @@
   border-radius: 20px;
   padding: 5px;
 }
-.trans-item {
-  height: 70px;
-  width: 500px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.trans-item-info-container{
-  width: 100%;
-}
-.trans-amount-note-flex{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.trans-amount {
-  margin-left: 10px;
-}

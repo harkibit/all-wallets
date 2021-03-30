@@ -16,7 +16,7 @@ export default function UsersReview({color}) {
         meta="Scientist"
         description={[
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
-          "tempor incididunt ut labore et dolore.",
+          "tempor incididunt.",
         ].join("")}
       />
     </div>

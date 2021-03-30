@@ -8,11 +8,10 @@ import 'animate.css/animate.css'
 import ListTransContextProvider from "./ContextsApi/ListTransContext";
 import ListWalletContextProvider from "./ContextsApi/ListWalletContext";
 import IdGeneratorContextProvider from "./ContextsApi/IdGeneratorContext";
-import NavBar from "./Components/Navbar/Navbar";
 import LandingPage from "./Screen/LandingPage/LandingPage";
 import Home from "./Screen/Home/Home";
 import Footer from "./Components/Footer/Footer";
-
+import "./App.css"
 
 export default function App() {
   return (
@@ -21,7 +20,6 @@ export default function App() {
         <ListWalletContextProvider>
           <ListTransContextProvider>
             <IdGeneratorContextProvider>
-              <NavBar/>
               <Route exact path="/" component={LandingPage} />
               <Route path = "/Home/:name"> <Home/> </Route>
               <Footer/>
